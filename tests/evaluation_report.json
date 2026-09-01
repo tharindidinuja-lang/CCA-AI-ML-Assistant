@@ -1,0 +1,18 @@
+[
+  {
+    "test_id": "eval_020",
+    "question": "What are the guest rules regarding overnight stays, signing in day guests, and maximum limits per month?",
+    "ground_truth": "The provided context does not contain information regarding guest rules for overnight stays, signing in day guests, or monthly limits.",
+    "model_response": "The context explicitly lists items that are strictly banned from being brought into rooms or flats.",
+    "score": 0.15,
+    "passed": false
+  },
+  {
+    "test_id": "eval_017",
+    "question": "How does the meal entitlement system work for students in catered accommodation?",
+    "ground_truth": "The context explains that the meal entitlement system for catered accommodation provides designated meals during specific dining hall hours using your student ID card.",
+    "model_response": "The context explains that the meal entitlement system for catered accommodation provides designated meals during specific dining hall hours using your student ID card.",
+    "score": 1.0,
+    "passed": true
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "_comment": "Test case evaluating missing vaccination details",
+    "test_id": "eval_001",
+    "question": "What vaccinations are strongly recommended before moving into the intercollegiate halls?",
+    "ground_truth": "The provided context mentions 'Vaccinations' as a topic in Chapter 4, but does not provide details about which specific vaccinations are recommended.",
+    "model_response": "The context mentions 'Vaccinations' as a topic covered in Chapter 4, but it does not provide details about which specific vaccinations are strongly recommended. Therefore, the answer is not provided.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating room provisions vs packing essentials",
+    "test_id": "eval_002",
+    "question": "What items are provided in standard bedrooms versus what do I need to bring myself?",
+    "ground_truth": "Standard bedrooms are provided with a bed frame and mattress, mattress protector, study desk and chair, wardrobe, shelving, curtains or blinds, internet, lamp, rubbish bin, UK 3-pin electrical sockets, and a mirror. Residents need to bring their own bedding and towels, coat hangers, UK 3-pin plug adapters, cooking utensils (if self-catered), and a squeegee (if ensuite).",
+    "model_response": "**Items provided in all bedrooms:**\n* Bed frame and mattress\n* Mattress protector\n* Study desk and chair\n* Wardrobe\n* Shelving\n* Curtains or blinds\n* Internet\n* Lamp\n* Rubbish bin\n* Electrical sockets (UK 3-Pin)\n* Mirror\n\n**Items you need to bring yourself (as they are not provided):**\n* Bedding and Towels\n* Coat Hangers\n* UK 3-Pin Plug Adapters (if travelling from abroad)\n* Cooking Utensils (for self-catered residents)\n* Squeegee (for ensuite residents, to keep the shower clean)",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating room allocations process and specific room requests",
+    "test_id": "eval_003",
+    "question": "How are room allocations handled, and can I request a specific room number prior to arrival?",
+    "ground_truth": "Room allocations are overseen by the Allocations Team, which manages all University accommodation allocations, room or flat swaps, extensions, and cancellations. The context does not provide information on whether a specific room number can be requested prior to arrival.",
+    "model_response": "Room allocations are handled by the Allocations Team, which oversees the allocation of all University accommodation.\n\nThe context does not provide information on whether you can request a specific room number prior to arrival.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+   },
+   {
+    "_comment": "Test case evaluating room swap policy and fee structure",
+    "test_id": "eval_004",
+    "question": "What is the policy and fee structure for requesting a room swap or relocation?",
+    "ground_truth": "The provided context notes that the Allocations Team manages the process for room or flat swaps, but it does not contain details regarding the specific policy or fee structure for requesting a relocation.",
+    "model_response": "The context states that the Allocations Team manages the process for room or flat swaps. However, it does not provide information on the policy or fee structure for requesting a room swap or relocation.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating departure steps at the end of a licence agreement",
+    "test_id": "eval_005",
+    "question": "What steps must I follow when departing from the hall at the end of my licence agreement?",
+    "ground_truth": "The provided context does not contain details about the steps to follow when departing from the hall at the end of a licence agreement.",
+    "model_response": "The context does not contain the answer to what steps must be followed when departing from the hall at the end of a licence agreement.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating access to Glide high-speed internet service",
+    "test_id": "eval_006",
+    "question": "How do I access the high-speed internet service provided by Glide in my room?",
+    "ground_truth": "The provided context does not contain details about how to access the high-speed internet service provided by Glide.",
+    "model_response": "The context does not contain information on how to access high-speed internet service provided by Glide in your room.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating rules and operating hours for private courtyard gardens",
+    "test_id": "eval_007",
+    "question": "What are the rules regarding the use of private courtyard gardens and their operating hours?",
+    "ground_truth": "The provided context does not contain information regarding the rules for using private courtyard gardens or their operating hours.",
+    "model_response": "The context does not contain information regarding the rules for the use of private courtyard gardens or their operating hours.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating correct postal delivery addressing and formatting",
+    "test_id": "eval_008",
+    "question": "How should I correctly address and format my postal deliveries so they are not returned to sender?",
+    "ground_truth": "The provided context does not contain information on how to correctly address and format postal deliveries to avoid them being returned to sender.",
+    "model_response": "The context does not contain information on how to correctly address and format postal deliveries to avoid them being returned to sender.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating acceptance policy for food takeaway and grocery deliveries",
+    "test_id": "eval_009",
+    "question": "Are food takeaway deliveries or supermarket grocery orders accepted at reception?",
+    "ground_truth": "No, reception does not accept food takeaway deliveries, supermarket grocery orders, or meal preparation parcels. Residents must collect food deliveries directly and ensure they are available to receive them promptly.",
+    "model_response": "No, the context states: \"Regrettably, we are unable to accept food takeaway deliveries, supermarket grocery orders, or meal preparation parcels.\" It also notes that \"Food deliveries must be collected directly by you.\"",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating responsibilities for keeping room doors locked for insurance purposes",
+    "test_id": "eval_010",
+    "question": "What are my responsibilities regarding keeping my room door locked for insurance purposes?",
+    "ground_truth": "The provided context mentions general obligations and licence agreements in Chapter 4, but it does not provide specific details regarding room door locking responsibilities for insurance purposes.",
+    "model_response": "The context mentions \"Your obligations\" and \"Licence Agreement\" as topics covered in Chapter 4, which would likely detail resident responsibilities. However, the specific information regarding keeping your room door locked for insurance purposes is not provided in the given text.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating circumstances for staff or contractors entering rooms without prior warning",
+    "test_id": "eval_011",
+    "question": "Under what circumstances can University staff or contractors enter my room without prior warning?",
+    "ground_truth": "The provided context does not contain details about the circumstances under which University staff or contractors can enter a room without prior warning.",
+    "model_response": "The context does not provide information on the circumstances under which University staff or contractors can enter a room without prior warning. While it mentions \"Your obligations,\" \"Licence Agreement,\" and \"Other documents and regulations\" in Chapter 4, the details of these are not provided.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating maintenance fault reporting procedures and specific hall contacts",
+    "test_id": "eval_012",
+    "question": "What is the procedure for reporting maintenance faults, and who should I contact for Garden Halls or Eleanor Rosa House?",
+    "ground_truth": "The Hall Management Team serves as the first point of contact for maintenance queries. However, the provided context does not detail specific reporting procedures or information regarding Garden Halls or Eleanor Rosa House.",
+    "model_response": "The Hall Management Team is your first point of contact for any queries related to maintenance services.\n\nThe context does not provide specific information regarding Garden Halls or Eleanor Rosa House, nor does it detail a specific procedure for reporting maintenance faults beyond contacting the Hall Management Team.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating target response times for emergency, urgent, and non-urgent repairs",
+    "test_id": "eval_013",
+    "question": "What are the target response times for emergency, urgent, and non-urgent repairs?",
+    "ground_truth": "The provided context does not contain details about target response times for emergency, urgent, and non-urgent repairs.",
+    "model_response": "The context does not provide the target response times for emergency, urgent, and non-urgent repairs.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating preventative measures for pest infestations like bed bugs",
+    "test_id": "eval_014",
+    "question": "What preventative measures should I follow to manage and avoid pest infestations like bed bugs?",
+    "ground_truth": "The provided context does not contain information about preventative measures for managing or avoiding pest infestations such as bed bugs.",
+    "model_response": "The context does not contain information about preventative measures to manage and avoid pest infestations like bed bugs.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating strict rules for waste disposal, recycling, and avoiding blocked kitchen sinks",
+    "test_id": "eval_015",
+    "question": "What are the strict rules regarding waste disposal, recycling, and avoiding blocked kitchen sinks?",
+    "ground_truth": "The provided context mentions that obligations, licence agreements, and regulations are covered in Chapter 4 and notes the presence of food waste and recycling bins in shared pantries, but it does not provide the specific strict rules for waste disposal, recycling, or preventing blocked kitchen sinks.",
+    "model_response": "The context mentions that \"Your obligations,\" \"Licence Agreement,\" and \"Other documents and regulations\" are covered in Chapter 4, which would likely contain such rules. It also states that \"Food waste and recycling bins\" are provided in shared pantries. However, the specific strict rules regarding waste disposal, recycling, and avoiding blocked kitchen sinks are not provided in the given text.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating fire alarm evacuation actions and prohibitions",
+    "test_id": "eval_016",
+    "question": "What immediate actions must I take when hearing the fire alarm, and what is strictly prohibited during an evacuation?",
+    "ground_truth": "The provided context does not contain details about immediate actions to take upon hearing a fire alarm or prohibitions during an evacuation.",
+    "model_response": "The context does not provide information on immediate actions to take when hearing the fire alarm or what is strictly prohibited during an evacuation.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating meal entitlement system and item counts for catered accommodation",
+    "test_id": "eval_017",
+    "question": "How does the meal entitlement system work for catered accommodation, including breakfast and dinner item counts?",
+    "ground_truth": "The provided context mentions catered accommodation licences but does not detail the meal entitlement system or specific breakfast and dinner item counts.",
+    "model_response": "The context mentions \"Licence for catered accommodation\" but does not provide details on how the meal entitlement system works, including breakfast and dinner item counts. It states that the Licence Agreement provides comprehensive details about the period of occupancy and conditions for terminating the agreement, and directs the reader to view their licence agreement for more information.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating accommodation fee payment deadlines and consequences for missing them",
+    "test_id": "eval_018",
+    "question": "What are the payment deadlines for accommodation fees, and what happens if I miss them?",
+    "ground_truth": "The provided context notes that the Accommodation Finance Team oversees fees, deposits, invoices, and payment plans, but it does not specify exact payment deadlines or the consequences of missing them.",
+    "model_response": "The context states that the Accommodation Finance Team oversees accommodation fees and deposits and ensures fees are collected accurately and on time. They will provide invoices and assist with setting up payment plans and resolving payment-related issues. However, the context does not specify the payment deadlines for accommodation fees or what happens if they are missed.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating prohibited items in rooms or flats such as cooking appliances and extension leads",
+    "test_id": "eval_019",
+    "question": "Which items are strictly banned from being brought into rooms or flats, such as certain cooking appliances and extension leads?",
+    "ground_truth": "The provided context mentions Chapter 4 regarding arrival preparations, obligations, and what to bring, but it does not specify which items like cooking appliances or extension leads are banned.",
+    "model_response": "The context mentions a chapter titled \"Before you arrive\" which includes sections like \"Your obligations\" and \"What to bring,\" where such information might typically be found. However, the specific list of items strictly banned from being brought into rooms or flats, including certain cooking appliances and extension leads, is not provided in the given text.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "_comment": "Test case evaluating guest rules for overnight stays, signing in day guests, and monthly limits",
+    "test_id": "eval_020",
+    "question": "What are the guest rules regarding overnight stays, signing in day guests, and maximum limits per month?",
+    "ground_truth": "The provided context does not contain information regarding guest rules for overnight stays, signing in day guests, or monthly limits.",
+    "model_response": "The context does not contain information regarding guest rules for overnight stays, signing in day guests, or maximum limits per month.",
+    "metrics": {
+      "is_supported": true,
+      "confidence_score": 0.95
+    }
+  }
+  ]
+  
+
+
+
+

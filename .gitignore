@@ -1,0 +1,29 @@
+# Environment variables and sensitive keys
+.env
+
+# Python virtual environments
+venv/
+cca_env/
+.venv/
+ENV/
+
+# Python compiled bytecode and cache
+__pycache__/
+*.py*
+.pytest_cache/
+
+# IDE and editor settings (VS Code)
+.vscode/
+.idea/
+
+# Local database files, logs, and vector stores
+*.db
+*.sqlite3
+vector_store/
+data/
+logs/
+*.log
+
+# OS-specific files
+Thumbs.db
+.DS_Store
