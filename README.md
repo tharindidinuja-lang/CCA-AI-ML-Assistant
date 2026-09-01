@@ -1,65 +1,21 @@
-"# CCA AI Assistant - Document-Based RAG System"
-""
-"## Overview"
-"A document-based AI assistant that reads a knowledge base, answers questions, and provides citations."
-""
-"## Tech Stack"
-"- Python 3.11"
-"- FastAPI (Backend API)"
-"- Streamlit (Frontend UI)"
-"- LlamaIndex (RAG Pipeline)"
-"- SQLite/PostgreSQL (Database)"
-"- OpenAI (LLM & Embeddings)"
-""
-"## Setup Instructions"
-""
-"### 1. Clone the Repository"
-"\`\`\`bash"
-"git clone https://github.com/yourusername/CCA-AI-Assistant.git"
-"cd CCA-AI-Assistant"
-"\`\`\`"
-""
-"### 2. Create Virtual Environment"
-"\`\`\`bash"
-"python -m venv venv"
-"source venv/bin/activate  # On Windows: venv\Scripts\activate"
-"\`\`\`"
-""
-"### 3. Install Dependencies"
-"\`\`\`bash"
-"pip install -r requirements.txt"
-"\`\`\`"
-""
-"### 4. Configure Environment"
-"\`\`\`bash"
-"cp .env.example .env"
-"# Edit .env with your OpenAI API key"
-"\`\`\`"
-""
-"### 5. Run the Application"
-"\`\`\`bash"
-"uvicorn app.main:app --reload --port 8000"
-"\`\`\`"
-""
-"### 6. Access the API"
-"- API: http://localhost:8000"
-"- API Docs: http://localhost:8000/docs"
-"- Health: http://localhost:8000/health"
-""
-"## Project Structure"
-"\`\`\`"
-"CCA-AI-Assistant/"
-"ÃÄÄ app/          # Main application code"
-"ÃÄÄ data/         # Document storage"
-"ÃÄÄ tests/        # Test files"
-"ÃÄÄ docs/         # Documentation"
-"ÃÄÄ scripts/      # Utility scripts"
-"ÃÄÄ logs/         # Log files"
-"ÃÄÄ venv/         # Virtual environment"
-"ÃÄÄ requirements.txt"
-"ÃÄÄ .env"
-"ÀÄÄ README.md"
-"\`\`\`"
-""
-"## License"
-"MIT"
+## ğŸ› ï¸ System Architecture & Technical Stack
+
+This project is built as a containerized, document-based RAG (Retrieval-Augmented Generation) knowledge assistant designed for secure and grounded question answering[cite: 1].
+
+### Core Technology Stack
+* **Language & Framework:** Python 3.10+, FastAPI (typed request/response models)[cite: 1]
+* **RAG Engine:** LlamaIndex[cite: 1]
+* **Vector Database:** PostgreSQL with `pgvector` extension[cite: 1]
+* **Containerization:** Docker & Docker Compose
+* **Interface:** Streamlit / Web UI[cite: 1]
+
+### System Workflow
+1. **Document Ingestion:** Sources (PDF, TXT, Markdown) are processed, split into manageable chunks, and embedded with metadata (document ID, title, chunk index, page/section)[cite: 1].
+2. **Vector Storage & Retrieval:** Embeddings are stored in PostgreSQL (`pgvector`), enabling similarity search to pull the top-$k$ relevant context chunks for any user question[cite: 1].
+3. **Grounded Generation & Citations:** The LLM receives *only* the retrieved context to formulate an answer, accompanied by explicit source citations (document name, page, and chunk previews) and a fallback for unsupported questions[cite: 1].
+
+### Database Schema Objects
+* **Document:** Stores metadata (id, title, source_type, file_path, created_at)[cite: 1].
+* **Chunk:** Stores text slices tied to documents (id, document_id, text, page, chunk_index)[cite: 1].
+* **Embedding:** Stores high-dimensional vector representations (chunk_id, vector, model_name)[cite: 1].
+* **ChatMessage / EvaluationCase:** Tracks interaction history and automated evaluation metrics[cite: 1].
