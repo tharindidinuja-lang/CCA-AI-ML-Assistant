@@ -83,8 +83,24 @@ The system uses a two-tier architecture connecting a React frontend to a FastAPI
   └────────────────────────┘      Answer + Citations    └────────────────────────┘
 
 
+---
+### 2. Frontend Setup
+cd frontend
+npm install
+npm run dev
 
+###Licence
 
+---
+
+### Step 3: Push Changes to GitHub
+
+Open your terminal at the project root and run:
+
+```cmd
+git add README.md
+git commit -m "Update Table of Contents with Tech Stack, Getting Started, and License links"
+git push origin main
 
 
 
