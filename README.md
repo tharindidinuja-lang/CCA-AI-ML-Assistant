@@ -62,15 +62,6 @@ Interactive API testing showing structured JSON request payload and grounded cit
 * **Node.js** (v18+)
 * **Python** (v3.10+)
 
-### 1. Backend Setup
-```bash
-cd backend
-python -m venv venv
-# Windows: venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-
----
 
 ## 🏗️ Architecture
 
