@@ -30,6 +30,8 @@ Navigating lengthy university handbooks can be time-consuming for students and s
 
 ## 🏗️ Architecture
 
+## 🏗️ Architecture
+
 The system uses a two-tier architecture connecting a React frontend to a FastAPI RAG backend:
 
 ```text
@@ -37,4 +39,3 @@ The system uses a two-tier architecture connecting a React frontend to a FastAPI
   │  React / Vite Frontend │ ─────────────────────────> │    FastAPI Backend     │
   │  (Tailwind CSS v4)     │ <───────────────────────── │   (RAG / Vector DB)    │
   └────────────────────────┘      Answer + Citations    └────────────────────────┘
----
