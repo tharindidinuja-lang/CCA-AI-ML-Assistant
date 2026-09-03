@@ -21,6 +21,7 @@ __pycache__/
 *.sqlite3
 vector_store/
 data/
+
 logs/
 *.log
 
