@@ -37,6 +37,7 @@ The system uses a two-tier architecture connecting a React frontend to a FastAPI
   │  React / Vite Frontend │ ─────────────────────────> │    FastAPI Backend     │
   │  (Tailwind CSS v4)     │ <───────────────────────── │   (RAG / Vector DB)    │
   └────────────────────────┘      Answer + Citations    └────────────────────────┘
+---
 
 ## 🛠️ System Architecture & Technical Stack
 
