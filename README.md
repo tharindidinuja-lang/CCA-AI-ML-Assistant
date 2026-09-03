@@ -10,7 +10,9 @@ An intelligent Retrieval-Augmented Generation (RAG) assistant designed to ingest
 
 ## 📌 Table of Contents
 - [Overview](#-overview)
-- [Architecture](#️-architecture)
+- [Architecture](#-architecture)
+- [System Architecture & Technical Stack](#-system-architecture--technical-stack)
+- [Application Screenshots](#-application-screenshots)
 - [Key Features](#-key-features)
 - [Tech Stack](#-tech-stack)
 - [Getting Started](#-getting-started)
@@ -28,7 +30,47 @@ Navigating lengthy university handbooks can be time-consuming for students and s
 
 ---
 
-## 🏗️ Architecture
+## 📸 Application Screenshots
+
+### 🖥️ React Dark-Mode Chat Interface
+Grounded question answering with direct source page citations and document upload panel:
+
+![React Chat Interface](assets/chat-interface.png)
+
+---
+
+### ⚡ FastAPI Swagger Documentation (`/ask` Endpoint)
+Interactive API testing showing structured JSON request payload and grounded citation response:
+
+| API Request (`POST /ask`) | API Response & Citations |
+|---|---|
+| ![FastAPI Request Payload](assets/api-request.png) | ![FastAPI Response Payload](assets/api-response.png) |
+
+---
+## 🛠️ Tech Stack
+
+* **Frontend:** React, Vite, Tailwind CSS v4
+* **Backend:** Python 3.10+, FastAPI, Uvicorn
+* **RAG Engine & Vector DB:** LlamaIndex, PostgreSQL (`pgvector`)
+* **DevOps:** Docker, Docker Compose, Git/GitHub
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* **Node.js** (v18+)
+* **Python** (v3.10+)
+
+### 1. Backend Setup
+```bash
+cd backend
+python -m venv venv
+# Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+---
 
 ## 🏗️ Architecture
 
@@ -39,3 +81,14 @@ The system uses a two-tier architecture connecting a React frontend to a FastAPI
   │  React / Vite Frontend │ ─────────────────────────> │    FastAPI Backend     │
   │  (Tailwind CSS v4)     │ <───────────────────────── │   (RAG / Vector DB)    │
   └────────────────────────┘      Answer + Citations    └────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
